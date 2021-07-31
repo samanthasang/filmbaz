@@ -1,0 +1,22 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <polygon fill="#cc0033" id="svg_1" points="12.45 9.93 9.03 6.49 6.36 7.16 6.36 10.64 9.58 10.64 12.45 9.93"/>
+  <polygon fill="#cc0033" id="svg_2" points="19.74 8.1 16.31 4.67 10.24 6.19 13.66 9.63 19.74 8.1"/>
+  <polygon fill="#cc0033" id="svg_3" points="24.58 6.88 21.15 3.45 17.53 4.38 20.96 7.8 24.58 6.88"/>
+  <polygon fill="#cc0033" id="svg_4" points="22.38 3.15 25.8 6.58 31 5.29 31 1 22.38 3.15"/>
+  <path fill="#cc0033" id="svg_5" d="m1,31l30,0l0,-13.93l-30,0l0,13.93zm7.5,-10.71l15,0l0,6.42l-15,0l0,-6.42z"/>
+  <polygon fill="#cc0033" id="svg_6" points="23.6 16 31 16 31 11.71 27.87 11.71 23.6 16"/>
+  <polygon fill="#cc0033" id="svg_7" points="26.36 11.71 21.8 11.71 17.51 16 22.09 16 26.36 11.71"/>
+  <polygon fill="#cc0033" id="svg_8" points="8.41 16 16 16 20.29 11.71 12.7 11.71 8.41 16"/>
+  <polygon fill="#cc0033" id="svg_9" points="11.19 11.71 6.36 11.71 6.36 16 6.9 16 11.19 11.71"/>
+  <rect fill="#cc0033" id="svg_10" y="7.43" x="1" width="4.29" height="3.21"/>
+  <rect fill="#cc0033" id="svg_11" y="11.71" x="1" width="4.29" height="4.29"/>
+ </g>
+</svg>

@@ -1,0 +1,245 @@
+.left-sidebar {
+  margin-top: 100px;
+  /* align-self: flex-end; */
+  float: left;
+}
+
+.relheader {
+  width: 85%;
+  height: auto;
+}
+#single_all_post {
+  justify-content: flex-start;
+  margin-top: 130px;
+}
+.post {
+  height: auto;
+}
+.trailer_post {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+.trailer_video {
+  width: 70%;
+  height: 240px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 7px;
+}
+.trailer_video video {
+  width: 100%;
+  border-radius: 7px;
+  display: none;
+}
+.trailer_post .trailer_video img {
+  width: 481px;
+  height: 241px;
+  border-radius: 7px;
+  position: absolute;
+  right: 11.2rem;
+  z-index: 1;
+  opacity:0.4;
+
+}
+.trailer_video button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 5;
+  background: none;
+  border: none;
+  right: 26rem;
+  margin-top: 78px;
+}
+.trailer_video button .play_trailer {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+}
+.play_trailer:hover{
+  background: #cc0033;
+  transition: .4s;
+}
+.border_bottom {
+  width: 93%;
+  margin: auto;
+}
+.details_description#single_description {
+  justify-content: flex-start;
+}
+/* download_box */
+.download_box_all {
+  min-height: 100px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.download_box_single {
+  padding: 0.8rem 0;
+  width: 93%;
+  background: #cc0033;
+  border-radius: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+.download_box_single img {
+  float: left;
+  margin-left: 1rem;
+}
+.download_box_single span {
+  margin-right: 25px;
+  color: #fdfdfd;
+}
+.sidenav {
+  height: 0;
+  width: 100%;
+  background-color: none;
+  overflow-y: hidden;
+  transition: 0.5s;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidenav li {
+  width: 93%;
+  padding: 10px 0;
+  border: 2px solid #cc0033;
+  border-radius: 10px;
+  margin-top: 12px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+.span_details {
+  margin-right: 1.3rem;
+}
+.span_details span {
+  width: 70px;
+}
+.sidenav li .download {
+  padding: 0.3rem 2rem;
+  background: #cc0033;
+  border-radius: 8px;
+  margin-right: 12rem;
+  color: #fdfdfd;
+  display: flex;
+  align-items: center;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    padding-top: 0;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* single_relative */
+.relative_post#single_relative_all {
+  width: 534px !important;
+  margin-top: 0;
+}
+.relative_pic#single_relative {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Comments */
+.comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.comments_header {
+  width: 93%;
+  padding: 0.8rem 0;
+  background: #cc0033;
+  border-radius: 10px;
+  text-align: right;
+  margin-top: 1rem;
+}
+.comments_header span {
+  margin-right: 1rem;
+}
+.details_comments {
+  width: 93%;
+  background: #e2e7e9;
+  border-radius: 10px;
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.user {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.user span {
+  margin-right: 0.5rem;
+}
+.answer button {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem 2.3rem;
+  border: none;
+  cursor: pointer;
+}
+.answer button:focus {
+  border: none;
+}
+.details_comments p {
+  margin-right: 1rem;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+.new_comments {
+  width: 93%;
+  margin: 1.6rem;
+}
+.new_comments textarea {
+  width: 100%;
+  border: none;
+  background: #e2e7e9;
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 1rem;
+}
+.new_comments textarea::placeholder {
+  color: #707070;
+}
