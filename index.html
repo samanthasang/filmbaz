@@ -5,22 +5,28 @@
     <meta charset="utf-8" />
     <title>Film Baz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Download High Quality Movies Ans Series" />
+    <meta name="description" content="دانلود فیلم و سریال با کیفیت بالا؛ هرآنچه به عنوان طرفدار سینما به دنبال آن هستید." />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="canonical" href="https://yourwebsite.com/" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="css/swiper.css" />
     <!-- link CSS Style -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="newstyle.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="img/topicon.png" rel="icon">
+    <link href="img/topicon.png" rel="apple-touch-icon">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
         <div class="container">
+            <input type="checkbox" id="toggle" class="toggle--checkbox">
+            <label for="toggle" class="toggle--label">
+                <span class="toggle--label-background"></span>
+            </label>
+            <div class="background"></div>
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="">
             </a>
@@ -33,10 +39,10 @@
                 </div>
             </form>
             <div class="order-lg-last">
-                <a href="#" class="btn btn-danger">ورود | ثبت نام</a>
+                <a href="#" class="btn me_btn">ورود | ثبت نام</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu_lines_hamburger_icon_white.svg" alt="">
+                <img src="img/menu_lines_hamburger_icon.svg" alt="">
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav m-auto">
@@ -110,32 +116,32 @@
                         </div>
                     </div>
                     <div class="advance-search">
-                        <span class="desc">ADVANCED SEARCH</span>
+                        <span class="desc">جست و جوی پیشرفته</span>
                         <div class="row">
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Accessories</option>
-                                        <option>Subject b</option>
-                                        <option>Subject c</option>
+                                        <option placeholder="" value="">تجهیزات جانبی</option>
+                                        <option>زیرشاخه 1</option>
+                                        <option>زیرشاخه 2</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Color</option>
-                                        <option>Subject b</option>
-                                        <option>Subject c</option>
+                                        <option placeholder="" value="">رنگ</option>
+                                       <option>زیرشاخه 1</option>
+                                       <option>زیرشاخه 2</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Size</option>
-                                        <option>Subject b</option>
-                                        <option>Subject c</option>
+                                        <option placeholder="" value="">اندازه</option>
+                                      <option>زیرشاخه 1</option>
+                                      <option>زیرشاخه 2</option>
                                     </select>
                                 </div>
                             </div>
@@ -144,30 +150,30 @@
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Sale</option>
-                                        <option>Subject b</option>
-                                        <option>Subject c</option>
+                                        <option placeholder="" value="">فروش</option>
+                                         <option>زیرشاخه 1</option>
+                                         <option>زیرشاخه 2</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Time</option>
-                                        <option>Last time</option>
-                                        <option>Today</option>
-                                        <option>This week</option>
-                                        <option>This month</option>
-                                        <option>This year</option>
+                                        <option placeholder="" value="">زمان</option>
+                                        <option>آخرین بار</option>
+                                        <option>امروز</option>
+                                        <option>این هفته</option>
+                                        <option>این ماه</option>
+                                        <option>این سال</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">Type</option>
-                                        <option>Subject b</option>
-                                        <option>Subject c</option>
+                                        <option placeholder="" value="">نوع</option>
+                                          <option>زیرشاخه 1</option>
+                                          <option>زیرشاخه 2</option>
                                     </select>
                                 </div>
                             </div>
@@ -175,11 +181,11 @@
                         <div class="row third">
                             <div class="input-field">
                                 <div class="result-count">
-                                    <span>108 </span>results
+                                    نتیجه جست و جو <span>108 </span>
                                 </div>
                                 <div class="group-btn">
-                                    <button class="btn-delete" id="delete">RESET</button>
-                                    <button class="btn-search">SEARCH</button>
+                                    <button class="me_btn">جست و جو</button>
+                                    <button class="btn-delete" id="delete">پاک کردن</button>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +253,7 @@
                 </div>
                 <div class="col-md-2 latest_pic">
                     <a href="#">
-                        <img src="img/unhinged.jpeg" alt="" class="image" />
+                        <img src="img/unhinged.jpg" alt="" class="image" />
                         <div class="overlay">
                             <span>اکشن-ترسناک</span>
                             <span>آمریکا-2015</span>
@@ -335,7 +341,7 @@
                         </div>
                         <div class="col-md-4 post_pic">
                             <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn btn-danger">توضیحات + دانلود</a>
+                            <a href="#" class="btn">توضیحات + دانلود</a>
                         </div>
                     </div>
                 </div>
@@ -412,7 +418,7 @@
                         </div>
                         <div class="col-md-4 post_pic">
                             <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn btn-danger">توضیحات + دانلود</a>
+                            <a href="#" class="btn">توضیحات + دانلود</a>
                         </div>
                     </div>
                 </div>
@@ -489,7 +495,7 @@
                         </div>
                         <div class="col-md-4 post_pic">
                             <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn btn-danger">توضیحات + دانلود</a>
+                            <a href="#" class="btn">توضیحات + دانلود</a>
                         </div>
                     </div>
                 </div>
@@ -566,7 +572,7 @@
                         </div>
                         <div class="col-md-4 post_pic">
                             <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn btn-danger">توضیحات + دانلود</a>
+                            <a href="#" class="btn">توضیحات + دانلود</a>
                         </div>
                     </div>
                 </div>
@@ -643,7 +649,7 @@
                         </div>
                         <div class="col-md-4 post_pic">
                             <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn btn-danger">توضیحات + دانلود</a>
+                            <a href="#" class="btn">توضیحات + دانلود</a>
                         </div>
                     </div>
                     <div class="panel-footer"></div>
@@ -658,10 +664,10 @@
                         <img class="icon_box" src="img/movie.svg" alt=" " />
                         <h2 class="gray_cr fo_big"> بر اساس ژانر</h2>
                         <ul class="btn_box">
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">فیلم</a>
                             </li>
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">سریال</a>
                             </li>
                         </ul>
@@ -773,10 +779,10 @@
                         <img class="icon_box" src="img/movie.svg" alt=" " />
                         <h2 class="gray_cr fo_big"> بر اساس سال تولید</h2>
                         <ul class="btn_box">
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">فیلم</a>
                             </li>
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">سریال</a>
                             </li>
                         </ul>
@@ -976,10 +982,10 @@
                         <img class="icon_box" src="img/movie.svg" alt=" " />
                         <h2 class="gray_cr fo_big">فیلم های دوبله</h2>
                         <ul class="btn_box">
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">فیلم</a>
                             </li>
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">سریال</a>
                             </li>
                         </ul>
@@ -1013,10 +1019,10 @@
                         <img class="icon_box" src="img/movie.svg" alt=" " />
                         <h2 class="gray_cr fo_big">به زودی</h2>
                         <ul class="btn_box">
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">فیلم</a>
                             </li>
-                            <li class="btn btn-danger">
+                            <li class="btn">
                                 <a href="#">سریال</a>
                             </li>
                         </ul>
@@ -1153,19 +1159,51 @@
             <!--end wp-pagenavi -->
         </div>
         <!--end main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- footer -->
-        <footer class="footer-nav">
-            <div class="main-footer white_bg">
-                <div class="about">
-                    <h2 class="red_cr fo_big">فیلم باز</h2>
-                    <p class="gray_cr_n fo_pa">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                    </p>
+        <footer class="row footer_nav white_bg">
+            <div class="col-md-4 about">
+                <div class="panel-heading gray_cr_n">
+                    <img class="icon_box" src="img/movie.svg" alt=" " />
+                    <h2 class="gray_cr fo_big"> فیلم باز</h2>
                 </div>
-                <ul class="about">
-                    <li>
-                        <h2 class="red_cr fo_big">دسترسی سریع</h2>
-                    </li>
+                <p class="gray_cr_n fo_pa">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                </p>
+            </div>
+            <div class="col-md-4 q_a_link">
+                <div class="panel-heading gray_cr_n">
+                    <img class="icon_box" src="img/movie.svg" alt=" " />
+                    <h2 class="gray_cr fo_big"> دسترسی سریع</h2>
+                </div>
+                <ul>
                     <li>
                         <a href="#">
                             <span class="gray_cr fo_he2_b">فیلم ها</span>
@@ -1193,28 +1231,30 @@
                         </a>
                     </li>
                 </ul>
-                <div class="support">
-                    <img src="img/digital.jpg " alt=" " class="hvr-grow-rotate" />
-                </div>
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="icon/instagram.svg " alt=" " class="hvr-backward" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="icon/telegramm.svg " alt=" " class="hvr-buzz-out" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="icon/twiterr.svg " alt=" " class="hvr-forward" /></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="footer-bot" role="contentinfo ">
+            <div class="col-md-4 support">
+                <div class="panel-heading gray_cr_n">
+                    <img class="icon_box" src="img/movie.svg" alt=" " />
+                    <h2 class="gray_cr fo_big">ما را دنبال کنید</h2>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#"><img src="icon/instagram.svg " alt=" " /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon/telegramm.svg " alt=" "/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="icon/twiterr.svg " alt=" "/></a>
+                    </li>
+                </ul>
+                <img src="img/digital.jpg " alt=" "/>
+            </div>
+            <div class="col-md-12 footer-bot" role="contentinfo ">
                 <div class="copyright">
                     <p class="gray_cr_n fo_he2_b">تمامی حقوق مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنوع می باشد</p>
                 </div>
-            </div>
+            </div> 
         </footer>
             <!-- end footer -->
     </section>
@@ -1247,16 +1287,6 @@
                 },
             });
     //end script Swiper 
-    //script navbar 
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-    // end script navbar  
     //script advansed search 
             const customSelects = document.querySelectorAll("select");
             const deleteBtn = document.getElementById('delete')

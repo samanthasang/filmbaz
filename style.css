@@ -1,4 +1,6 @@
-/* font */
+/*======================================
+=              font                    =
+======================================*/
 
 @font-face {
     font-family: 'ir_sans';
@@ -16,7 +18,9 @@
 }
 
 
-/* Default CSS */
+/*======================================
+=               CSS reset              =
+======================================*/
 
 html,
 body,
@@ -96,10 +100,6 @@ video {
     background: transparent;
 }
 
-body {
-    line-height: 1;
-}
-
 article,
 aside,
 details,
@@ -139,25 +139,6 @@ a {
     background: transparent;
 }
 
-
-/* change colours to suit your needs */
-
-ins {
-    background-color: #fdf;
-    color: #000;
-    text-decoration: none;
-}
-
-
-/* change colours to suit your needs */
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
 del {
     text-decoration: line-through;
 }
@@ -173,29 +154,12 @@ table {
     border-spacing: 0;
 }
 
-
-/* change border colour to suit your needs */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input,
-select {
-    vertical-align: middle;
-}
-
 body {
     color: #444;
-    background: #ecedee !important;
-    font: 0.8rem "IRSNSR", tahoma;
+    font: 0.8rem "IRSNSR", tahoma !important;
     direction: rtl;
     overflow-x: hidden;
+    position: relative;
 }
 
 li {
@@ -226,11 +190,11 @@ a {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-    color: #2ecc71;
+    color: #444;
 }
 
 a:hover {
-    color: #fdfdfd !important;
+    color: #c03 !important;
     text-decoration: none !important;
 }
 
@@ -265,18 +229,208 @@ h6 {
     margin-right: 5px;
 }
 
+
+/*  */
+
 .bgc_g {
     background: #ddd;
 }
 
 
-/*  */
+/*======================================
+=              main                    =
+======================================*/
 
 
-/*  */
+/* toggle button */
+
+:root {
+    /** sunny side **/
+    --white-background: #e1e1e1;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --black-background: #141414;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--white-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+}
+
+.toggle--checkbox {
+    display: none;
+}
+
+.toggle--checkbox:checked~.background {
+    background: var(--black-background);
+}
+
+.toggle--checkbox:checked+.toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+    /** Change the cloud to stars **/
+    /** Change the sun into the moon **/
+    /** Show the dimples on the moon **/
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background {
+    left: -50px;
+    width: 3px;
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background:before {
+    width: 3px;
+    height: 3px;
+    top: -10px;
+    left: 5px;
+}
+
+.toggle--checkbox:checked+.toggle--label .toggle--label-background:after {
+    width: 3px;
+    height: 3px;
+    left: 0;
+    top: 9px;
+}
+
+.toggle--checkbox:checked+.toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+}
+
+.toggle--checkbox:checked+.toggle--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+}
+
+.toggle--label {
+    /** Placeholder element, starting at blue **/
+    width: 80px;
+    height: 40px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    /** The sun cloud and moon stars **/
+    /** Sun/Moon element **/
+    /** Gray dots on the moon **/
+}
+
+.toggle--label-background {
+    width: 4px;
+    height: 4px;
+    border-radius: 5px;
+    position: relative;
+    background: var(--white);
+    left: -12px;
+    top: 13px;
+    transition: all 150ms ease-in;
+}
+
+.toggle--label-background:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 20px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -14px;
+    transition: all 150ms ease-in;
+}
+
+.toggle--label-background:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+}
+
+.toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 5px solid var(--yellow-border);
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 30px;
+    background: var(--yellow-background);
+}
+
+.toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+    left: 65px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+@keyframes switch {
+    0% {
+        left: 4px;
+    }
+    60% {
+        left: 4px;
+        width: 60px;
+    }
+    100% {
+        left: 40px;
+        width: 30px;
+    }
+}
+
+@keyframes reverse {
+    0% {
+        left: 40px;
+        width: 30px;
+    }
+    60% {
+        left: 4px;
+        width: 60px;
+    }
+    100% {
+        left: 4px;
+    }
+}
 
 
-/* strat */
+/* end toggle button */
 
 .fo_big {
     font: 1.4rem "IRSNSB";
@@ -357,14 +511,6 @@ h6 {
     display: inline-flex;
 }
 
-.posts_leftsidebar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
 
 /* post*/
 
@@ -407,38 +553,15 @@ h6 {
 
 /* footer-nav */
 
-.footer-nav {
+.footer_nav {
     width: 100%;
-    margin: 40px 0;
+    margin-top: 40px;
+    padding: 30px;
 }
 
-.main-footer {
-    border-radius: 8px;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-nav .about {
-    width: 225px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer-nav .about p {
+.about p {
     text-align: justify;
-}
-
-.footer-nav .about a:hover h3 {
-    transition: 0.4s;
-}
-
-.support {
-    align-self: flex-end;
-    margin-bottom: 1rem;
+    margin-top: 50px;
 }
 
 .support img {
@@ -447,66 +570,27 @@ h6 {
     cursor: pointer;
 }
 
-.social {
-    align-self: flex-end;
-    margin-bottom: 1rem;
+.q_a_link {
+    float: right;
+    text-align: right;
 }
 
-.social ul {
+.q_a_link ul {
+    margin-top: 50px;
+}
+
+.social {
     display: flex;
-    align-items: center;
+}
+
+.social li {
+    margin: 15px;
 }
 
 .social img {
-    width: 30px;
-    height: 30px;
-    margin-left: 0.5rem;
+    width: 50px;
+    height: 50px;
 }
-
-.footer-bot {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    float: right;
-}
-
-
-/* 
- */
-
-.topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
-}
-
-.topnav .search-container {
-    float: right;
-}
-
-.topnav input[type="text"] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-.topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-    background: #ccc;
-}
-
-
-/* SEELECTRIC */
 
 
 /*  */
