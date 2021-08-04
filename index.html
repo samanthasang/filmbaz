@@ -1,107 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Film Baz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="دانلود فیلم و سریال با کیفیت بالا؛ هرآنچه به عنوان طرفدار سینما به دنبال آن هستید." />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="canonical" href="https://yourwebsite.com/" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper.css" />
-    <!-- link CSS Style -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="img/topicon.png" rel="icon">
-    <link href="img/topicon.png" rel="apple-touch-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FILMBAZ</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/hover-min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- navicons -->
+    <link href="images/LogoTop.svg" rel="icon">
+    <link href="images/LogoTop.svg" rel="apple-touch-icon">
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top " aria-label="Eighth navbar example">
         <div class="container">
-            <input type="checkbox" id="toggle" class="toggle--checkbox">
-            <label for="toggle" class="toggle--label">
-                <span class="toggle--label-background"></span>
-            </label>
-            <div class="background"></div>
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="">
-            </a>
-            <form action="#" class="searchform order-lg-last">
-                <div class="form-group d-flex">
-                    <input type="text" class="form-control pl-3" placeholder="جست و جو" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو' ">
-                    <button type="submit" placeholder="" class="form-control search">
-                        <img src="img/search.svg" alt="">
-                    </button>
-                </div>
-            </form>
-            <div class="order-lg-last">
-                <a href="#" class="btn me_btn">ورود | ثبت نام</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="img/menu_lines_hamburger_icon.svg" alt="">
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link">صفحه اصلی</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">دسته بندی</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="#">Page 1</a>
-                            <a class="dropdown-item" href="#">Page 2</a>
-                            <a class="dropdown-item" href="#">Page 3</a>
-                            <a class="dropdown-item" href="#">Page 4</a>
-                        </div>
+            <a class="navbar-brand" href="#"><img src="images/brand.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs">
+                    <li class="nav-item tab">
+                        <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">فیلم</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">سریال</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">هنرمندان</a></li>
+                    <li class="nav-item tab">
+                        <a class="nav-link" href="#">فیلم</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">سریال</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">هنرمندان</a>
+                    </li>
+                    <li class="nav-item tab dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">دسته بندی</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <div class="search-container">
+                    <form action="" method="">
+                        <input type="text" placeholder="جست و جو.." name="search" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو..' ">
+                        <button class="hvr-shrink" type="submit"><img src="images/search.svg" alt=""></button>
+                    </form>
+                </div>
+                <a href="#" class="btn btn_red">ورود | ثبت نام</a>
             </div>
         </div>
     </nav>
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#"><img src="img/film baz.png" alt="" /></a>
+    <!-- end navbar -->
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img1.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">ثبت نام</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Godfather11.jpg" alt="" /></a>
+            <div class="carousel-item">
+                <img src="images/img2.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">بیشتر بدانید</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/lord of ring.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/morgan.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/the-joker.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/godfather2.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/The Good, the Bad and the Ugly.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/pulp.jpg" alt="" /></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="img/schindler.jpg" alt="" /></a>
+            <div class="carousel-item">
+                <img src="images/img3.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">گالری</a></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
     </div>
-    <div class="clear"></div>
-    <!-- container -->
-    <section class="container" id="container_main">
-        <!-- advansed search -->
+    <!--end carousel -->
+    <!-- advanced search -->
+    <div class="container">
         <div class="s009">
             <form>
                 <div class="inner-form">
@@ -110,8 +118,8 @@
                             <input id="search" type="text" placeholder="جست و جو کنید" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو کنید' " />
                             <div class="icon-wrap">
                                 <svg aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                                </svg>
+                                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                            </svg>
                             </div>
                         </div>
                     </div>
@@ -121,28 +129,28 @@
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">تجهیزات جانبی</option>
-                                        <option>زیرشاخه 1</option>
-                                        <option>زیرشاخه 2</option>
-                                    </select>
+                                    <option placeholder="" value="">تجهیزات جانبی</option>
+                                    <option>زیرشاخه 1</option>
+                                    <option>زیرشاخه 2</option>
+                                </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">رنگ</option>
-                                       <option>زیرشاخه 1</option>
-                                       <option>زیرشاخه 2</option>
-                                    </select>
+                                    <option placeholder="" value="">رنگ</option>
+                                   <option>زیرشاخه 1</option>
+                                   <option>زیرشاخه 2</option>
+                                </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">اندازه</option>
-                                      <option>زیرشاخه 1</option>
-                                      <option>زیرشاخه 2</option>
-                                    </select>
+                                    <option placeholder="" value="">اندازه</option>
+                                  <option>زیرشاخه 1</option>
+                                  <option>زیرشاخه 2</option>
+                                </select>
                                 </div>
                             </div>
                         </div>
@@ -150,42 +158,42 @@
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">فروش</option>
-                                         <option>زیرشاخه 1</option>
-                                         <option>زیرشاخه 2</option>
-                                    </select>
+                                    <option placeholder="" value="">فروش</option>
+                                     <option>زیرشاخه 1</option>
+                                     <option>زیرشاخه 2</option>
+                                </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">زمان</option>
-                                        <option>آخرین بار</option>
-                                        <option>امروز</option>
-                                        <option>این هفته</option>
-                                        <option>این ماه</option>
-                                        <option>این سال</option>
-                                    </select>
+                                    <option placeholder="" value="">زمان</option>
+                                    <option>آخرین بار</option>
+                                    <option>امروز</option>
+                                    <option>این هفته</option>
+                                    <option>این ماه</option>
+                                    <option>این سال</option>
+                                </select>
                                 </div>
                             </div>
                             <div class="input-field">
                                 <div class="input-select">
                                     <select data-trigger="" name="choices-single-defaul">
-                                        <option placeholder="" value="">نوع</option>
-                                          <option>زیرشاخه 1</option>
-                                          <option>زیرشاخه 2</option>
-                                    </select>
+                                    <option placeholder="" value="">نوع</option>
+                                      <option>زیرشاخه 1</option>
+                                      <option>زیرشاخه 2</option>
+                                </select>
                                 </div>
                             </div>
                         </div>
                         <div class="row third">
                             <div class="input-field">
+                                <div class="group-btn">
+                                    <button class=" btn btn_red">جست و جو</button>
+                                    <button class="btn-delete" id="delete">پاک کردن</button>
+                                </div>
                                 <div class="result-count">
                                     نتیجه جست و جو <span>108 </span>
-                                </div>
-                                <div class="group-btn">
-                                    <button class="me_btn">جست و جو</button>
-                                    <button class="btn-delete" id="delete">پاک کردن</button>
                                 </div>
                             </div>
                         </div>
@@ -193,1133 +201,618 @@
                 </div>
             </form>
         </div>
-        <!--end advansed search -->
-        <!-- relative_post -->
-        <section class="relative_post white_bg">
-            <h2 class="gray_cr fo_big">جدیدترین فیلم ها</h2>
-            <div class="relative_pic">
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/Fantastic_Beasts.png" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/jonathan.jpg" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/1917.jpg" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
+        <!-- end advanced search -->
 
-                    </a>
+        <!-- new_movies box  -->
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/film.svg" alt="">
+                    <h5>جدیدترین فیلم ها</h5>
                 </div>
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/Fantastic_Beasts.png" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
-
-                    </a>
-                </div>
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/dynasties.jpg" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
-
-                    </a>
-                </div>
-                <div class="col-md-2 latest_pic">
-                    <a href="#">
-                        <img src="img/unhinged.jpg" alt="" class="image" />
-                        <div class="overlay">
-                            <span>اکشن-ترسناک</span>
-                            <span>آمریکا-2015</span>
-                            <span>IMDB:8.5</span>
-                        </div>
-
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!--end relative_post -->
-        <!-- main -->
-        <div class="row">
-            <!-- right side -->
-            <div class="col-md-8 right_side">
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> دانلود فیلم The Fault in Our Stars</h2>
-                        <ul class="icon_box">
-                            <li>
-                                <a href="#"><img src="img/bell.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/add.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/star.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8 post_details">
-                            <ul>
-                                <li>
-                                    <span class="gray_cr_n">نام فیلم :</span>
-                                    <a href="#"><span class="red_cr"> The Fault in Our Stars</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">ژانر :</span>
-                                    <a href="#"><span class="red_cr"> خانوادگی و درام</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">امتیاز :</span>
-                                    <a href="#"><span class="gray_cr">&nbsp;7.8 در IMDB</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">زبان :</span>
-                                    <span class="red_cr">&nbsp;انگلیسی</span>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">محصول کشور :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;آمریکا</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">سال انتشار :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;2014</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">کارگردان :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;دیوید فینچر</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">بازیگران :</span>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Shailene Woodley ,
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Ansel Elgort, 
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp;  Nat Wolff
-                                                    </span></a>
-                                </li>
-                                <li>
-                                    <span>خلاصه داستان  :</span>
-                                </li>
-                                <li class="synopsis">
-                                    <p class="red_cr">
-                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 post_pic">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn">توضیحات + دانلود</a>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> دانلود فیلم The Fault in Our Stars</h2>
-                        <ul class="icon_box">
-                            <li>
-                                <a href="#"><img src="img/bell.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/add.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/star.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8 post_details">
-                            <ul>
-                                <li>
-                                    <span class="gray_cr_n">نام فیلم :</span>
-                                    <a href="#"><span class="red_cr"> The Fault in Our Stars</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">ژانر :</span>
-                                    <a href="#"><span class="red_cr"> خانوادگی و درام</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">امتیاز :</span>
-                                    <a href="#"><span class="gray_cr">&nbsp;7.8 در IMDB</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">زبان :</span>
-                                    <span class="red_cr">&nbsp;انگلیسی</span>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">محصول کشور :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;آمریکا</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">سال انتشار :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;2014</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">کارگردان :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;دیوید فینچر</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">بازیگران :</span>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Shailene Woodley ,
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Ansel Elgort, 
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp;  Nat Wolff
-                                                    </span></a>
-                                </li>
-                                <li>
-                                    <span>خلاصه داستان  :</span>
-                                </li>
-                                <li class="synopsis">
-                                    <p class="red_cr">
-                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 post_pic">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn">توضیحات + دانلود</a>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> دانلود فیلم The Fault in Our Stars</h2>
-                        <ul class="icon_box">
-                            <li>
-                                <a href="#"><img src="img/bell.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/add.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/star.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8 post_details">
-                            <ul>
-                                <li>
-                                    <span class="gray_cr_n">نام فیلم :</span>
-                                    <a href="#"><span class="red_cr"> The Fault in Our Stars</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">ژانر :</span>
-                                    <a href="#"><span class="red_cr"> خانوادگی و درام</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">امتیاز :</span>
-                                    <a href="#"><span class="gray_cr">&nbsp;7.8 در IMDB</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">زبان :</span>
-                                    <span class="red_cr">&nbsp;انگلیسی</span>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">محصول کشور :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;آمریکا</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">سال انتشار :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;2014</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">کارگردان :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;دیوید فینچر</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">بازیگران :</span>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Shailene Woodley ,
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Ansel Elgort, 
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp;  Nat Wolff
-                                                    </span></a>
-                                </li>
-                                <li>
-                                    <span>خلاصه داستان  :</span>
-                                </li>
-                                <li class="synopsis">
-                                    <p class="red_cr">
-                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 post_pic">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn">توضیحات + دانلود</a>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> دانلود فیلم The Fault in Our Stars</h2>
-                        <ul class="icon_box">
-                            <li>
-                                <a href="#"><img src="img/bell.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/add.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/star.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8 post_details">
-                            <ul>
-                                <li>
-                                    <span class="gray_cr_n">نام فیلم :</span>
-                                    <a href="#"><span class="red_cr"> The Fault in Our Stars</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">ژانر :</span>
-                                    <a href="#"><span class="red_cr"> خانوادگی و درام</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">امتیاز :</span>
-                                    <a href="#"><span class="gray_cr">&nbsp;7.8 در IMDB</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">زبان :</span>
-                                    <span class="red_cr">&nbsp;انگلیسی</span>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">محصول کشور :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;آمریکا</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">سال انتشار :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;2014</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">کارگردان :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;دیوید فینچر</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">بازیگران :</span>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Shailene Woodley ,
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Ansel Elgort, 
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp;  Nat Wolff
-                                                    </span></a>
-                                </li>
-                                <li>
-                                    <span>خلاصه داستان  :</span>
-                                </li>
-                                <li class="synopsis">
-                                    <p class="red_cr">
-                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 post_pic">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn">توضیحات + دانلود</a>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> دانلود فیلم The Fault in Our Stars</h2>
-                        <ul class="icon_box">
-                            <li>
-                                <a href="#"><img src="img/bell.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/add.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/star.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-8 post_details">
-                            <ul>
-                                <li>
-                                    <span class="gray_cr_n">نام فیلم :</span>
-                                    <a href="#"><span class="red_cr"> The Fault in Our Stars</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">ژانر :</span>
-                                    <a href="#"><span class="red_cr"> خانوادگی و درام</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">امتیاز :</span>
-                                    <a href="#"><span class="gray_cr">&nbsp;7.8 در IMDB</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">زبان :</span>
-                                    <span class="red_cr">&nbsp;انگلیسی</span>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">محصول کشور :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;آمریکا</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">سال انتشار :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;2014</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">کارگردان :</span>
-                                    <a href="#"><span class="red_cr">&nbsp;دیوید فینچر</span></a>
-                                </li>
-                                <li>
-                                    <span class="gray_cr_n">بازیگران :</span>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Shailene Woodley ,
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp; Ansel Elgort, 
-                                                    </span></a>
-                                    <a href="#"> <span class="red_cr">
-                                                        &nbsp;  Nat Wolff
-                                                    </span></a>
-                                </li>
-                                <li>
-                                    <span>خلاصه داستان  :</span>
-                                </li>
-                                <li class="synopsis">
-                                    <p class="red_cr">
-                                        فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                        و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 post_pic">
-                            <img src="img/The Fault in Our Stars.jpg" alt=" " />
-                            <a href="#" class="btn">توضیحات + دانلود</a>
-                        </div>
-                    </div>
-                    <div class="panel-footer"></div>
-                </div>
-                <!--  -->
-            </div>
-            <!--end right side -->
-            <!-- left side -->
-            <div class="col-md-4 left_side">
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> بر اساس ژانر</h2>
-                        <ul class="btn_box">
-                            <li class="btn">
-                                <a href="#">فیلم</a>
-                            </li>
-                            <li class="btn">
-                                <a href="#">سریال</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 movie_genre">
-                            <ul>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">اجتماعی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">کمدی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">فانتزی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">تخیلی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">فانتزی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">جنایی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">درام (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">خانوادگی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">ترسناک (1249)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 movie_genre">
-                            <ul>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">معمایی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">ماجراجویی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">کمدی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">وسترون (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">هیجانی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">اجتماعی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">کمدی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">فانتزی (1249)</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">تخیلی (1249)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> بر اساس سال تولید</h2>
-                        <ul class="btn_box">
-                            <li class="btn">
-                                <a href="#">فیلم</a>
-                            </li>
-                            <li class="btn">
-                                <a href="#">سریال</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 movie_genre">
-                            <ul>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2004</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2005</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2006</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2007</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2008</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2009</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2010</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2011</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2012</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 movie_genre">
-                            <ul>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2013</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2014</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2015</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2016</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2017</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2018</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2019</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2020</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="gray_cr">
-                                        <span class="fo_he">2021</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big"> آخرین تریلر ها</h2>
-                    </div>
-                    <div class="tab_panel">
-                        <div class="btn_group tab">
-                            <button class="btn-block tablinks" type="button" onclick="openCity(event, 'Subscription')" id="defaultOpen">
-                                <a href="#Subscription">جدیدترین</a>
-                            </button>
-                            <button class="btn-block tablinks" type="button" onclick="openCity(event, 'Comments')">
-                                <a href="#Comments">پر بازدیدترین</a>
-                            </button>
-                            <button class="btn-block tablinks" type="button" onclick="openCity(event, 'Watchlist')">
-                                <a href="#Watchlist"> تصادفی</a>
-                            </button>
-                        </div>
-                        <div class="tab_content">
-                            <div id="Subscription" class="tabcontent">
-                                <div class="row">
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/jonathan.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/unhinged.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/walkingdead.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/dynasties.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/1917.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/Fantastic_Beasts.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="Comments" class="tabcontent">
-                                <div class="row">
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/unhinged.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/walkingdead.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/jonathan.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/dynasties.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/Fantastic_Beasts.png" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/1917.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="Watchlist" class="tabcontent">
-                                <div class="row">
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/unhinged.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/jonathan.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/1917.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/walkingdead.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/dynasties.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-md-4 movie_img">
-                                        <a href="#"><img src="img/Fantastic_Beasts.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big">فیلم های دوبله</h2>
-                        <ul class="btn_box">
-                            <li class="btn">
-                                <a href="#">فیلم</a>
-                            </li>
-                            <li class="btn">
-                                <a href="#">سریال</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
+                <div class="card-body">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/jonathan.jpg" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/1917.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/unhinged.jpg" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/dynasties.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/walkingdead.jpg" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/Fantastic_Beasts.png">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/dynasties.jpg" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/Jonathan.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/1917.jpg" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/unhinged.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/Fantastic_Beasts.png" alt=""></a>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="images/Walking_Dead.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-plus"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-download"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big">به زودی</h2>
-                        <ul class="btn_box">
-                            <li class="btn">
-                                <a href="#">فیلم</a>
-                            </li>
-                            <li class="btn">
-                                <a href="#">سریال</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/jonathan.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/unhinged.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/walkingdead.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/dynasties.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/1917.jpg" alt=""></a>
-                            </div>
-                            <div class="col-md-4 movie_img">
-                                <a href="#"><img src="img/Fantastic_Beasts.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big">جدیدترین فیلم ها و سریال ها</h2>
-                    </div>
-                    <div class="row panel-body new_movie_img">
-                        <div class="col-md-12">
-                            <img src="img/frog.jpg" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <img src="img/kimcheshe.jpg" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <img src="img/Riverdale-Overview-Wikinaghd.jpg" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <img src="img/seriyal paperly.jpg" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <img src="img/The Godfather11.jpg" alt="">
-                        </div>
-                        <div class="col-md-12">
-                            <img src="img/this-is-us.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="col-md-12 panel panel_gray">
-                    <div class="panel-heading gray_cr_n">
-                        <img class="icon_box" src="img/movie.svg" alt=" " />
-                        <h2 class="gray_cr fo_big">اخبار سایت</h2>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="media_list">
-                            <li class="media">
-                                <a href="#" class="pull-right">
-                                    <img src="img/user_1.jpg" alt="" class="img-circle">
-                                </a>
-                                <div class="media_body">
-                                    <p class="pull-right">قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</p>
-                                    <span class="text-muted pull-left">
-                                        <small class="text-muted">1دقیقه قبل</small>
-                                    </span>
-                                    <span class="pull-right bgc_g"><small>دسته ها:</small><a href="#">فیلم</a></span>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-right">
-                                    <img src="img/user_1.jpg" alt="" class="img-circle">
-                                </a>
-                                <div class="media_body">
-                                    <p class="pull-right">قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</p>
-                                    <span class="text-muted pull-left">
-                                        <small class="text-muted">1دقیقه قبل</small>
-                                    </span>
-                                    <span class="pull-right bgc_g"><small>دسته ها:</small><a href="#">فیلم</a></span>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-right">
-                                    <img src="img/user_1.jpg" alt="" class="img-circle">
-                                </a>
-                                <div class="media_body">
-                                    <p class="pull-right">قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</p>
-                                    <span class="text-muted pull-left">
-                                        <small class="text-muted">1دقیقه قبل</small>
-                                    </span>
-                                    <span class="pull-right bgc_g"><small>دسته ها:</small><a href="#">فیلم</a></span>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-right">
-                                    <img src="img/user_1.jpg" alt="" class="img-circle">
-                                </a>
-                                <div class="media_body">
-                                    <p class="pull-right">قسمت 8 فصل 5 سریال ما با هم هستیم اضافه شد</p>
-                                    <span class="text-muted pull-left">
-                                        <small class="text-muted">1دقیقه قبل</small>
-                                    </span>
-                                    <span class="pull-right bgc_g"><small>دسته ها:</small><a href="#">فیلم</a></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--  -->
+                <!-- <div class="card-footer text-muted">
+                    2 days ago
+                </div> -->
             </div>
-            <!--end left side -->
-            <!-- wp-pagenavi -->
-            <div class="wp-pagenavi white_bg">
-                <span class="white_cr fo_he2 pages_navi">صفحه 1 از 100</span>
-                <span class="current white_cr fo_he2 pages_navi">1</span>
-                <a href="# " class="white_cr fo_he2">1</a>
-                <a href="# " class="white_cr fo_he2">2</a>
-                <a href="# " class="white_cr fo_he2">3</a>
-                <a href="# " class="white_cr fo_he2">4</a>
-                <a href="# " class="white_cr fo_he2">5</a>
-                <a href="# " class="white_cr fo_he2">...</a>
-                <a href="# " class="white_cr fo_he2">10</a>
-                <a href="# " class="white_cr fo_he2">20</a>
-                <a href="# " class="white_cr fo_he2">30</a>
-                <a href="# " class="white_cr fo_he2">...</a>
-                <a href="# " class="white_cr fo_he2" id="nexti">بعدی</a>
-                <a href="# " class="white_cr fo_he2" id="previ">قبلی</a>
-            </div>
-            <!--end wp-pagenavi -->
         </div>
-        <!--end main -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- footer -->
-        <footer class="row footer_nav white_bg">
-            <div class="col-md-4 about">
-                <div class="panel-heading gray_cr_n">
-                    <img class="icon_box" src="img/movie.svg" alt=" " />
-                    <h2 class="gray_cr fo_big"> فیلم باز</h2>
+        <!--end new_movies box  -->
+        <!-- main  -->
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt="">
+                            <h5>دانلود فیلم The Fault in Our Stars</h5>
+                            <ul class="hp_icon">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/bell-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/star-solid.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row card-body">
+                            <div class="col-md-8 movie_detail">
+                                <ul>
+                                    <li>
+                                        <span>نام فیلم :</span>
+                                        <a href="#"><span> The Fault in Our Stars</span></a>
+                                    </li>
+                                    <li>
+                                        <span>ژانر :</span>
+                                        <a href="#"><span> خانوادگی و درام</span></a>
+                                    </li>
+                                    <li>
+                                        <span>امتیاز :</span>
+                                        <a href="#"><span>&nbsp;7.8 در IMDB</span></a>
+                                    </li>
+                                    <li>
+                                        <span>زبان :</span>
+                                        <span>&nbsp;انگلیسی</span>
+                                    </li>
+                                    <li>
+                                        <span>محصول کشور :</span>
+                                        <a href="#"><span>&nbsp;آمریکا</span></a>
+                                    </li>
+                                    <li>
+                                        <span>سال انتشار :</span>
+                                        <a href="#"><span>&nbsp;2014</span></a>
+                                    </li>
+                                    <li>
+                                        <span>کارگردان :</span>
+                                        <a href="#"><span>&nbsp;دیوید فینچر</span></a>
+                                    </li>
+                                    <li>
+                                        <span>بازیگران :</span>
+                                        <a href="#"> <span>
+                                                            &nbsp; Shailene Woodley ,
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp; Ansel Elgort, 
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp;  Nat Wolff
+                                                        </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 movie_pic">
+                                <img src="images/The Fault in Our Stars.jpg" alt="">
+                                <a href="#" class="btn btn_red">توضیحات + دانلود</a>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <span>خلاصه داستان  :</span>
+                                </p>
+                                <p>
+                                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                    و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="gray_cr_n fo_pa">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
-                </p>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt="">
+                            <h5>دانلود فیلم The Fault in Our Stars</h5>
+                            <ul class="hp_icon">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/bell-regular.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/plus-square-reg.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/star-reg.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row card-body">
+                            <div class="col-md-8 movie_detail">
+                                <ul>
+                                    <li>
+                                        <span>نام فیلم :</span>
+                                        <a href="#"><span> The Fault in Our Stars</span></a>
+                                    </li>
+                                    <li>
+                                        <span>ژانر :</span>
+                                        <a href="#"><span> خانوادگی و درام</span></a>
+                                    </li>
+                                    <li>
+                                        <span>امتیاز :</span>
+                                        <a href="#"><span>&nbsp;7.8 در IMDB</span></a>
+                                    </li>
+                                    <li>
+                                        <span>زبان :</span>
+                                        <span>&nbsp;انگلیسی</span>
+                                    </li>
+                                    <li>
+                                        <span>محصول کشور :</span>
+                                        <a href="#"><span>&nbsp;آمریکا</span></a>
+                                    </li>
+                                    <li>
+                                        <span>سال انتشار :</span>
+                                        <a href="#"><span>&nbsp;2014</span></a>
+                                    </li>
+                                    <li>
+                                        <span>کارگردان :</span>
+                                        <a href="#"><span>&nbsp;دیوید فینچر</span></a>
+                                    </li>
+                                    <li>
+                                        <span>بازیگران :</span>
+                                        <a href="#"> <span>
+                                                            &nbsp; Shailene Woodley ,
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp; Ansel Elgort, 
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp;  Nat Wolff
+                                                        </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 movie_pic">
+                                <img src="images/The Fault in Our Stars.jpg" alt="">
+                                <a href="#" class="btn btn_red">توضیحات + دانلود</a>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <span>خلاصه داستان  :</span>
+                                </p>
+                                <p>
+                                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                    و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt="">
+                            <h5>دانلود فیلم The Fault in Our Stars</h5>
+                            <ul class="hp_icon">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/bell-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/star-solid.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row card-body">
+                            <div class="col-md-8 movie_detail">
+                                <ul>
+                                    <li>
+                                        <span>نام فیلم :</span>
+                                        <a href="#"><span> The Fault in Our Stars</span></a>
+                                    </li>
+                                    <li>
+                                        <span>ژانر :</span>
+                                        <a href="#"><span> خانوادگی و درام</span></a>
+                                    </li>
+                                    <li>
+                                        <span>امتیاز :</span>
+                                        <a href="#"><span>&nbsp;7.8 در IMDB</span></a>
+                                    </li>
+                                    <li>
+                                        <span>زبان :</span>
+                                        <span>&nbsp;انگلیسی</span>
+                                    </li>
+                                    <li>
+                                        <span>محصول کشور :</span>
+                                        <a href="#"><span>&nbsp;آمریکا</span></a>
+                                    </li>
+                                    <li>
+                                        <span>سال انتشار :</span>
+                                        <a href="#"><span>&nbsp;2014</span></a>
+                                    </li>
+                                    <li>
+                                        <span>کارگردان :</span>
+                                        <a href="#"><span>&nbsp;دیوید فینچر</span></a>
+                                    </li>
+                                    <li>
+                                        <span>بازیگران :</span>
+                                        <a href="#"> <span>
+                                                            &nbsp; Shailene Woodley ,
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp; Ansel Elgort, 
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp;  Nat Wolff
+                                                        </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 movie_pic">
+                                <img src="images/The Fault in Our Stars.jpg" alt="">
+                                <a href="#" class="btn btn_red">توضیحات + دانلود</a>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <span>خلاصه داستان  :</span>
+                                </p>
+                                <p>
+                                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                    و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt="">
+                            <h5>دانلود فیلم The Fault in Our Stars</h5>
+                            <ul class="hp_icon">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/bell-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="images/star-solid.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row card-body">
+                            <div class="col-md-8 movie_detail">
+                                <ul>
+                                    <li>
+                                        <span>نام فیلم :</span>
+                                        <a href="#"><span> The Fault in Our Stars</span></a>
+                                    </li>
+                                    <li>
+                                        <span>ژانر :</span>
+                                        <a href="#"><span> خانوادگی و درام</span></a>
+                                    </li>
+                                    <li>
+                                        <span>امتیاز :</span>
+                                        <a href="#"><span>&nbsp;7.8 در IMDB</span></a>
+                                    </li>
+                                    <li>
+                                        <span>زبان :</span>
+                                        <span>&nbsp;انگلیسی</span>
+                                    </li>
+                                    <li>
+                                        <span>محصول کشور :</span>
+                                        <a href="#"><span>&nbsp;آمریکا</span></a>
+                                    </li>
+                                    <li>
+                                        <span>سال انتشار :</span>
+                                        <a href="#"><span>&nbsp;2014</span></a>
+                                    </li>
+                                    <li>
+                                        <span>کارگردان :</span>
+                                        <a href="#"><span>&nbsp;دیوید فینچر</span></a>
+                                    </li>
+                                    <li>
+                                        <span>بازیگران :</span>
+                                        <a href="#"> <span>
+                                                            &nbsp; Shailene Woodley ,
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp; Ansel Elgort, 
+                                                        </span></a>
+                                        <a href="#"> <span>
+                                                            &nbsp;  Nat Wolff
+                                                        </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 movie_pic">
+                                <img src="images/The Fault in Our Stars.jpg" alt="">
+                                <a href="#" class="btn btn_red">توضیحات + دانلود</a>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <span>خلاصه داستان  :</span>
+                                </p>
+                                <p>
+                                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
+                                    و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 q_a_link">
-                <div class="panel-heading gray_cr_n">
-                    <img class="icon_box" src="img/movie.svg" alt=" " />
-                    <h2 class="gray_cr fo_big"> دسترسی سریع</h2>
+            <div class="col-md-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt="">
+                            <h5>بر اساس ژانر</h5>
+                            <ul class="btn_box">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn_red">فیلم</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn_red">سریال</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row card-body">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>اجتماعی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>کمدی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>فانتزی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>تخیلی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>جنایی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>درام<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>خانوادگی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>ترسناک<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>معمایی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>ماجراجویی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>وسترن<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>هیجانی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>اجتماعی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>کمدی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>فانتزی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>تخیلی<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gray_cr">
+                                            <span>وسترن<sup>(1249)</sup></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="gray_cr fo_he2_b">فیلم ها</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="gray_cr fo_he2_b">سریال ها</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="gray_cr fo_he2_b">درباره ما</h3>
-                        </a>
-                    </li>    
-                    <li>
-                        <a href="#">
-                            <span class="gray_cr fo_he2_b">سوالات متداول</h3>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="gray_cr fo_he2_b">تماس با ما</h3>
-                        </a>
-                    </li>
-                </ul>
             </div>
-            <div class="col-md-4 support">
-                <div class="panel-heading gray_cr_n">
-                    <img class="icon_box" src="img/movie.svg" alt=" " />
-                    <h2 class="gray_cr fo_big">ما را دنبال کنید</h2>
-                </div>
-                <ul class="social">
-                    <li>
-                        <a href="#"><img src="icon/instagram.svg " alt=" " /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="icon/telegramm.svg " alt=" "/></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="icon/twiterr.svg " alt=" "/></a>
-                    </li>
-                </ul>
-                <img src="img/digital.jpg " alt=" "/>
-            </div>
-            <div class="col-md-12 footer-bot" role="contentinfo ">
-                <div class="copyright">
-                    <p class="gray_cr_n fo_he2_b">تمامی حقوق مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنوع می باشد</p>
-                </div>
-            </div> 
-        </footer>
-            <!-- end footer -->
-    </section>
+        </div>
+        <!-- end main -->
 
-    <!-- Swiper JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <script src="js/swiper.min.js"></script>
+
+
+    </div>
+
+    <script src="js/jqyry.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/choices.js"></script>
 
     <script>
-    // script Swiper 
-            var swiper = new Swiper(".swiper-container", {
-                spaceBetween: 30,
-                centeredSlides: true,
-                loop: true,
-                // autoplay: {
-                // delay: 2500,
-                // disableOnInteraction: false,
-                // },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-    //end script Swiper 
-    //script advansed search 
-            const customSelects = document.querySelectorAll("select");
-            const deleteBtn = document.getElementById('delete')
-            const choices = new Choices('select', {
-                searchEnabled: false,
-                itemSelectText: '',
-                removeItemButton: true,
-            });
-            deleteBtn.addEventListener("click", function(e) {
-                e.preventDefault()
-                const deleteAll = document.querySelectorAll('.choices__button')
-                for (let i = 0; i < deleteAll.length; i++) {
-                    deleteAll[i].click();
-                }
-            });
-    // end script advansed search  
-    // script tab menu -->
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
+        //script advansed search 
+        const customSelects = document.querySelectorAll("select");
+        const deleteBtn = document.getElementById('delete')
+        const choices = new Choices('select', {
+            searchEnabled: false,
+            itemSelectText: '',
+            removeItemButton: true,
+        });
+        deleteBtn.addEventListener("click", function(e) {
+            e.preventDefault()
+            const deleteAll = document.querySelectorAll('.choices__button')
+            for (let i = 0; i < deleteAll.length; i++) {
+                deleteAll[i].click();
             }
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-    //end script tab menu 
+        });
+        // end script advansed search
+        // script tab menu -->
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        //end script tab menu
     </script>
 </body>
 
