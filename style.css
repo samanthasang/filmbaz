@@ -163,8 +163,8 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
+    border-top: 2px solid #c03 !important;
+    margin: 20px 0 !important;
     padding: 0;
 }
 
@@ -202,6 +202,14 @@ li {
 
 .p0 {
     padding: 0!important;
+}
+
+.p-r {
+    padding-right: 5px !important;
+}
+
+.p-l {
+    padding-left: 5px !important;
 }
 
 .fr {
@@ -1113,6 +1121,7 @@ sup {
 .card-header {
     display: flex;
     border-bottom: 2px solid #c03 !important;
+    margin-bottom: 20px !important;
 }
 
 .card-header img {
@@ -1396,6 +1405,196 @@ sup {
 
 
 /* end footer */
+
+
+/* download page */
+
+.accordion-item,
+.accordion-item .accordion-button {
+    border-radius: 10px !important;
+}
+
+.accordion-item {
+    border: none !important;
+    margin: 5px;
+}
+
+.accordion-header {
+    margin-bottom: 10px;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #e1e1e1 !important;
+    text-align: right;
+    background-color: #c03 !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #c03 !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.dl_box {
+    min-height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c03;
+    border-radius: 15px;
+    margin-bottom: 10px
+}
+
+.title_box {
+    min-height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #c03;
+    color: #e1e1e1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
+
+.gallery {
+    margin: 20px 0 !important;
+    padding: 0;
+    height: 100%;
+}
+
+[class*='thumbnail-'] {
+    background: #000;
+    width: 33.33%;
+    height: auto;
+    float: left;
+    padding: 5px 5px 3px 5px;
+}
+
+[class*='thumbnail-'] img {
+    max-width: 100%;
+}
+
+[class*='large-'] {
+    background: #000;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    display: none;
+}
+
+[class*='large-'] img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+[class*='thumbnail-'] {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+[class*='thumbnail-']:hover img {
+    transition: .3s linear;
+    transition-delay: 300ms;
+    transform: /* rotate(5deg) */
+    scale(1.4);
+}
+
+.card {
+    border: none;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    border-radius: 4px
+}
+
+.dots {
+    height: 4px;
+    width: 4px;
+    margin-bottom: 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.user-img {
+    margin-top: 4px
+}
+
+.reply {
+    margin-left: 12px
+}
+
+.reply small {
+    color: #b7b4b4
+}
+
+.reply small:hover {
+    color: green;
+    cursor: pointer
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input,
+.login-box .user-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #141414;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #c03;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #141414;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+textarea.form_control {
+    height: inherit !important;
+    width: 100%;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label,
+.login-box .user-box textarea:focus~label,
+.login-box .user-box textarea:valid~label {
+    top: -20px;
+    right: 0;
+    color: #c03;
+    font-size: 12px;
+}
+
+
+/* end download page */
 
 
 /*------------ media_screen ---------------*/
