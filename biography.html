@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs">
                     <li class="nav-item tab">
-                        <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">صفحه اصلی</a>
                     </li>
                     <li class="nav-item tab">
                         <a class="nav-link" href="#">فیلم</a>
@@ -57,10 +57,92 @@
                         <button class="hvr-shrink" type="submit"><img src="images/search.svg" alt=""></button>
                     </form>
                 </div>
-                <a href="#" class="btn btn_red">ورود | ثبت نام</a>
+                <a href="#" class="btn btn_red" data-bs-toggle="modal" data-bs-target="#exampleModal">ورود | ثبت نام</a>
             </div>
         </div>
     </nav>
+    <!-- modal for regester -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="form-wrap">
+                    <div class="tabs">
+                        <h3 class="signup-tab"><a class="active" href="#signup-tab-content">ثبت نام</a></h3>
+                        <h3 class="login-tab"><a href="#login-tab-content">ورود</a></h3>
+                    </div>
+                    <!--tabs-->
+                    <div class="tabs-content">
+                        <div id="signup-tab-content" class="login-box active">
+                            <form method="POST" id="contactForm" name="contactForm" class="contactForm row">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="email" class="input" id="user_email" autocomplete="off" required>
+                                        <label>ایمیل</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="text" class="input" id="user_name" autocomplete="off" required>
+                                        <label>نام کاربری</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" required>
+                                        <label>رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="confirm_user_pass" autocomplete="off" required>
+                                        <label>تکرار رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 col-12 mx-auto">
+                                    <input type="submit" class="btn btn_red" value="ثبت نام">
+                                </div>
+                            </form>
+                            <!--.login-form-->
+                        </div>
+                        <!--.signup-tab-content-->
+                        <div id="login-tab-content" class="login-box">
+                            <form method="POST" id="contactForm" name="contactForm" class="contactForm row">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="text" class="input" id="user_name" autocomplete="off" required>
+                                        <label>نام کاربری</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" required>
+                                        <label>رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                 مرا به خاطر بسپار!
+                                </label>
+                                </div>
+                                <div class="d-grid gap-2 col-12 mx-auto">
+                                    <input type="submit" class="btn btn_red" value="ورود">
+                                </div>
+                                <p><a href="#">رمز خود را فراموش کردید؟</a></p>
+                            </form>
+                            <!--.login-form-->
+                        </div>
+                        <!--.login-tab-content-->
+                    </div>
+                    <!--.tabs-content-->
+                    <!-- <button type="button" class="btn btn_red" data-bs-dismiss="modal">Close</button> -->
+                </div>
+                <!--form-wrap-->
+            </div>
+        </div>
+    </div>
+    <!-- end modal for regester -->
     <!-- end navbar -->
     <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">

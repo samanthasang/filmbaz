@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>download_1</title>
+    <title>news</title>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"> -->
@@ -61,8 +61,8 @@
             </div>
         </div>
     </nav>
+    <!-- end navbar -->
     <!-- modal for regester -->
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -106,6 +106,7 @@
                             <!--.login-form-->
                         </div>
                         <!--.signup-tab-content-->
+
                         <div id="login-tab-content" class="login-box">
                             <form method="POST" id="contactForm" name="contactForm" class="contactForm row">
                                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
@@ -123,13 +124,14 @@
                                 <div class="form-check mt-3 mb-3">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                 مرا به خاطر بسپار!
-                                </label>
+                                     مرا به خاطر بسپار!
+                                    </label>
                                 </div>
                                 <div class="d-grid gap-2 col-12 mx-auto">
                                     <input type="submit" class="btn btn_red" value="ورود">
                                 </div>
                                 <p><a href="#">رمز خود را فراموش کردید؟</a></p>
+
                             </form>
                             <!--.login-form-->
                         </div>
@@ -143,7 +145,6 @@
         </div>
     </div>
     <!-- end modal for regester -->
-    <!-- end navbar -->
     <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -153,7 +154,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/img1.jpg" alt="">
+                <img src="img/avengers-endgame-baner.jpg" alt="">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Example headline.</h1>
@@ -163,7 +164,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/img2.jpg" alt="">
+                <img src="img/Black Widow baner.jpg" alt="">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
@@ -173,7 +174,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/img3.jpg" alt="">
+                <img src="img/Captain Marvel baner.jpg" alt="">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>One more for good measure.</h1>
@@ -271,7 +272,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row third">
+                        <div class="row Third">
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">فروش</option>
+                                     <option>زیرشاخه 1</option>
+                                     <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">زمان</option>
+                                    <option>آخرین بار</option>
+                                    <option>امروز</option>
+                                    <option>این هفته</option>
+                                    <option>این ماه</option>
+                                    <option>این سال</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">نوع</option>
+                                      <option>زیرشاخه 1</option>
+                                      <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Fourth">
                             <div class="input-field">
                                 <div class="group-btn">
                                     <button class=" btn btn_red">جست و جو</button>
@@ -287,341 +320,209 @@
             </form>
         </div>
         <!-- end advanced search -->
+        <!-- new_movies box  -->
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/film.svg" alt=""> جدیدترین فیلم ها
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/avengers-endgame-poster.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/Black Widow poster.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/Captain Marvel poster.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/Eternals_(film)_poster.jpeg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/Shang-Chi and The Legend of The Ten Rings poster.jpeg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6">
+                                <div class="box">
+                                    <img src="img/Spider-Man Far From Home poster.jpg">
+                                    <div class="box-content">
+                                        <div class="inner-content">
+                                            <h3 class="title">IMDB: <span>7.8</span></h3>
+                                            <span class="post">hd - blu ray</span>
+                                            <ul class="icon">
+                                                <li>
+                                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><img src="images/withe_download.svg" alt=""></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end new_movies box  -->
         <!-- main  -->
         <div class="row mb-3">
             <div class="col-md-8">
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <img src="images/film.svg" alt=""> دانلود فیلم The Fault in Our Stars
-                            <ul class="hp_icon">
-                                <li class="list-inline-item">
-                                    <a href="#"><img src="images/bell-solid.svg" alt=""></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#"><img src="images/plus-square-solid.svg" alt=""></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#"><img src="images/star-solid.svg" alt=""></a>
-                                </li>
-                            </ul>
+                            <img src="images/film.svg" alt=""> همکاری جیسون موموا و دواین جانسون برای ساخت یک فیلم اکشن
+                        </div>
+                        <div class="row card-body d-flex justify-content-center">
+                            <div class="col-md-3 movie_pic">
+                                <img src="img/jason_momoa.jpg" alt="">
+                            </div>
+                            <div class="col-md-3 movie_pic">
+                                <img src="img/Dwayne-Johnson.jpg" alt="">
+                            </div>
+                            <p><strong>First They Killed My Father in2017</strong> چند سالی است که آنجلینا جولی به عنوان کارگردان پشت دوربین قرار گرفته است. آخرین فیلمی که وی کارگردانی آن را بر عهده داشت بود ، اما به زودی او در حال کار بر روی یک داستان زندگی
+                                نامه ای است ، داستان عکاس جنگ به نام دان مک کالین. و این بار تام هاردی تهیه کنندگی پروژه جدید آنجلینا را بر عهده دارد. این فیلم براساس زندگینامه دان مک کالین در سال ۱۹۹۲ منتشر شده است (و در سال ۲۰۱۷ به روزرسانی شده است)
+                                ، داستان این عکاس زمان جنگ را روایت می کند که از محله های فقیرنشین لندن برای عکاسی به برخی از خطرناک ترین مناطق جنگی جهان رفت. از زمان سقوط دیوار برلین تا جنگ داخلی سوریه ، مک کالین زندگی خود را به خطر انداخت و از هر درگیری
+                                بزرگی که در طول زندگی بزرگسالی اش اتفاق افتاده است، تصاویر باورنکردنی را به ثبت رساند.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">2روز قبل</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="images/film.svg" alt=""> اخبار مرتبط با این مطلب
                         </div>
                         <div class="row card-body">
-                            <div class="col-md-12 movie_detail">
-                                <div class="wrapper">
-                                    <video class="video">
-                                                <source src="video/HBO Max 2021.mp4" type="video/mp4" />
-                                            </video>
-                                    <div class="playpause">
-                                        <img src="img/play.svg" alt="">
+                            <div class="d-flex text-muted pt-3">
+                                <img src="images/avatar.png" class="bd-placeholder-img flex-shrink-0 me-2 rounded" alt="">
+                                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><strong class="text-gray-dark">بهترین فیلم های ۲۰۲۱ که نباید دیدنشان را از دست دهیم</strong></a>
                                     </div>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <span>نام فیلم :</span>
-                                        <a href="#"><span> The Fault in Our Stars</span></a>
-                                    </li>
-                                    <li>
-                                        <span>ژانر :</span>
-                                        <a href="#"><span> خانوادگی و درام</span></a>
-                                    </li>
-                                    <li>
-                                        <span>امتیاز :</span>
-                                        <a href="#"><span>&nbsp;7.8 در IMDB</span></a>
-                                    </li>
-                                    <li>
-                                        <span>زبان :</span>
-                                        <span>&nbsp;انگلیسی</span>
-                                    </li>
-                                    <li>
-                                        <span>محصول کشور :</span>
-                                        <a href="#"><span>&nbsp;آمریکا</span></a>
-                                    </li>
-                                    <li>
-                                        <span>سال انتشار :</span>
-                                        <a href="#"><span>&nbsp;2014</span></a>
-                                    </li>
-                                    <li>
-                                        <span>کارگردان :</span>
-                                        <a href="#"><span>&nbsp;دیوید فینچر</span></a>
-                                    </li>
-                                    <li>
-                                        <span>بازیگران :</span>
-                                        <a href="#"> <span>
-                                                            &nbsp; Shailene Woodley ,
-                                                        </span></a>
-                                        <a href="#"> <span>
-                                                            &nbsp; Ansel Elgort, 
-                                                        </span></a>
-                                        <a href="#"> <span>
-                                                            &nbsp;  Nat Wolff
-                                                        </span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-12">
-                                <p>
-                                    <span>خلاصه داستان  :</span>
-                                </p>
-                                <p>
-                                    فیلمی رمانتیک درام آمریکایی به کارگردانی جاش بون، برگرفته از رمانی به همین نام به قلم جان گرین است. در این فیلم شیلین وودلی، انسل الگورت، لورا درن، سام ترمل، نات وولف و ویلم دفو نقش‌آفرینی می‌کنند. فیلم‌برداری بخت پریشان در پیتسبورگ و آمستردام صورت گرفته‌است
-                                    و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                   لینک های دانلود زبان اصلی
-                                    </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            لینک های دانلود دوبله فارسی
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            لینک های دانلود زیرنویس
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-12 dl_box">
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>کیفیت:<span>1080 HD</span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>حجم::<span>1.93</span>گیگابایت</span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <span>انکودر:<span></span></span>
-                                                    </div>
-                                                    <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
-                                                        <a href="#" class="btn btn_red btn-sm">لینک دانلود</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="fr mt-2">4ساعت قبل</span>
                                 </div>
                             </div>
-                            <div class="gallery">
-                                <div class="col-md-12 col-lf-12 col-sm-12 col-xs-12 col-12 p-r p-l">
-                                    <div class="title_box">
-                                        <span>اسکرین شات از فیلم</span>
+                            <div class="d-flex text-muted pt-3">
+                                <img src="images/avatar.png" class="bd-placeholder-img flex-shrink-0 me-2 rounded" alt="">
+                                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><strong class="text-gray-dark">بهترین فیلم های ۲۰۲۱ که نباید دیدنشان را از دست دهیم</strong></a>
                                     </div>
-                                </div>
-                                <div class="thumbnail-1 wow fadeInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-9.jpg" alt="" />
-                                </div>
-                                <div class="large-1 wow bounceInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-9.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-2 wow fadeInDown">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-6.jpg" alt="" />
-                                </div>
-                                <div class="large-2 wow bounceInDown">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-6.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-3 wow fadeInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
-                                </div>
-                                <div class="large-3 wow bounceInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-7.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-4 wow fadeInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-5.jpg" alt="" />
-                                </div>
-                                <div class="large-4 wow bounceInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-5.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-5 wow flipInX">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-1.jpg" alt="" />
-                                </div>
-                                <div class="large-5 wow bounceIn">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-1.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-6 wow fadeInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-4.jpg" alt="" />
-                                </div>
-                                <div class="large-6 wow bounceInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-4.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-7 wow fadeInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-3.jpg" alt="" />
-                                </div>
-                                <div class="large-7 wow bounceInLeft">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-3.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-8 wow fadeInUp">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-2.jpg" alt="" />
-                                </div>
-                                <div class="large-8 wow bounceInUp">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-2.jpg" alt="" />
-                                </div>
-                                <div class="thumbnail-9 wow fadeInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" alt="" />
-                                </div>
-                                <div class="large-9 wow bounceInRight">
-                                    <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" alt="" />
+                                    <span class="fr mt-2">4ساعت قبل</span>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="card-header">
-                                        <img src="images/film.svg" alt=""> فیلم های مشابه
+                            <div class="d-flex text-muted pt-3">
+                                <img src="images/avatar.png" class="bd-placeholder-img flex-shrink-0 me-2 rounded" alt="">
+                                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><strong class="text-gray-dark">بهترین فیلم های ۲۰۲۱ که نباید دیدنشان را از دست دهیم</strong></a>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                        <div class="box">
-                                            <img src="images/1917.jpg">
-                                            <div class="box-content">
-                                                <div class="inner-content">
-                                                    <h3 class="title">IMDB: <span>7.8</span></h3>
-                                                    <span class="post">hd - blu ray</span>
-                                                    <ul class="icon">
-                                                        <li>
-                                                            <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><img src="images/withe_download.svg" alt=""></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                        <div class="box">
-                                            <img src="images/dynasties.jpg">
-                                            <div class="box-content">
-                                                <div class="inner-content">
-                                                    <h3 class="title">IMDB: <span>7.8</span></h3>
-                                                    <span class="post">hd - blu ray</span>
-                                                    <ul class="icon">
-                                                        <li>
-                                                            <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><img src="images/withe_download.svg" alt=""></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                        <div class="box">
-                                            <img src="images/Fantastic_Beasts.png">
-                                            <div class="box-content">
-                                                <div class="inner-content">
-                                                    <h3 class="title">IMDB: <span>7.8</span></h3>
-                                                    <span class="post">hd - blu ray</span>
-                                                    <ul class="icon">
-                                                        <li>
-                                                            <a href="#"><img src="images/plus-square-solid.svg" alt=""> </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"><img src="images/withe_download.svg" alt=""></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="fr mt-2">4ساعت قبل</span>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="comment">
+                            <div class="d-flex text-muted pt-3">
+                                <img src="images/avatar.png" class="bd-placeholder-img flex-shrink-0 me-2 rounded" alt="">
+                                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><strong class="text-gray-dark">بهترین فیلم های ۲۰۲۱ که نباید دیدنشان را از دست دهیم</strong></a>
+                                    </div>
+                                    <span class="fr mt-2">4ساعت قبل</span>
+                                </div>
+                            </div>
+                            <div class="d-flex text-muted pt-3">
+                                <img src="images/avatar.png" class="bd-placeholder-img flex-shrink-0 me-2 rounded" alt="">
+                                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#"><strong class="text-gray-dark">بهترین فیلم های ۲۰۲۱ که نباید دیدنشان را از دست دهیم</strong></a>
+                                    </div>
+                                    <span class="fr mt-2">4ساعت قبل</span>
+                                </div>
+                            </div>
+                            <div class="comment mt-5">
                                 <div class="col-md-12 col-lf-12 col-sm-12 col-xs-12 col-12 p-r p-l">
                                     <div class="title_box">
                                         <span>دیدگاه کاربران</span>
@@ -1241,6 +1142,30 @@
             </div>
         </div>
         <!-- end main -->
+        <!-- pagination -->
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#">8 </span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+        <!--end  pagination -->
         <!-- footer -->
         <footer class="footer">
             <div class="container">
@@ -1325,22 +1250,27 @@
             }
         });
         // end script advansed search
-        // navbar-toggler 
+    </script>
+    <!-- navbar-toggler -->
+    <script>
         function myFunction(x) {
             x.classList.toggle("change");
         }
-        //end navbar toggler
-        //video player
-        $('.video').parent().click(function() {
-            if ($(this).children(".video").get(0).paused) {
-                $(this).children(".video").get(0).play();
-                $(this).children(".playpause").fadeOut();
-            } else {
-                $(this).children(".video").get(0).pause();
-                $(this).children(".playpause").fadeIn();
-            }
+        // regester modal tabs
+        jQuery(document).ready(function($) {
+            tab = $('.tabs h3 a');
+
+            tab.on('click', function(event) {
+                event.preventDefault();
+                tab.removeClass('active');
+                $(this).addClass('active');
+
+                tab_content = $(this).attr('href');
+                $('div[id$="tab-content"]').removeClass('active');
+                $(tab_content).addClass('active');
+            });
         });
-        //end video player
+        // end regester modal tabs
     </script>
 
 </body>
