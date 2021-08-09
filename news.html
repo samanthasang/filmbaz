@@ -18,7 +18,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top " aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-default rounded fixed-top " aria-label="Eighth navbar example">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/brand.png" alt=""></a>
             <a href="#" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
                 <div class="search-container">
                     <form action="" method="">
                         <input type="text" placeholder="جست و جو.." name="search" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو..' ">
-                        <button class="hvr-shrink" type="submit"><img src="images/search.svg" alt=""></button>
+                        <button type="submit"><img src="images/search.svg" alt="" class="hvr-shrink"></button>
                     </form>
                 </div>
                 <a href="#" class="btn btn_red" data-bs-toggle="modal" data-bs-target="#exampleModal">ورود | ثبت نام</a>
@@ -1271,6 +1271,11 @@
             });
         });
         // end regester modal tabs
+        // cheng navbar color when scroll
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        // end cheng navbar color when scroll
     </script>
 
 </body>

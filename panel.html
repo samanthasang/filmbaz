@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>panel</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/hover-min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- navicons -->
+    <link href="images/LogoTop.svg" rel="icon">
+    <link href="images/LogoTop.svg" rel="apple-touch-icon">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-default rounded fixed-top " aria-label="Eighth navbar example">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/brand.png" alt=""></a>
+            <a href="#" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs">
+                    <li class="nav-item tab">
+                        <a class="nav-link active" aria-current="page" href="index.html">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link" href="#">فیلم</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">سریال</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">هنرمندان</a>
+                    </li>
+                    <li class="nav-item tab dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">دسته بندی</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form action="" method="">
+                        <input type="text" placeholder="جست و جو.." name="search" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو..' ">
+                        <button type="submit"><img src="images/search.svg" alt="" class="hvr-shrink" ></button>
+                    </form>
+                </div>
+                <a href="#" class="btn btn_red" data-bs-toggle="modal" data-bs-target="#exampleModal">ورود | ثبت نام</a>
+            </div>
+        </div>
+    </nav>
+    <!-- modal for regester -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="form-wrap">
+                    <div class="tabs">
+                        <h3 class="signup-tab"><a class="active" href="#signup-tab-content">ثبت نام</a></h3>
+                        <h3 class="login-tab"><a href="#login-tab-content">ورود</a></h3>
+                    </div>
+                    <!--tabs-->
+                    <div class="tabs-content">
+                        <div id="signup-tab-content" class="login-box active">
+                            <form method="POST" id="contactForm" name="contactForm" class="contactForm row">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="email" class="input" id="user_email" autocomplete="off" required>
+                                        <label>ایمیل</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="text" class="input" id="user_name" autocomplete="off" required>
+                                        <label>نام کاربری</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" required>
+                                        <label>رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="confirm_user_pass" autocomplete="off" required>
+                                        <label>تکرار رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2 col-12 mx-auto">
+                                    <input type="submit" class="btn btn_red" value="ثبت نام">
+                                </div>
+                            </form>
+                            <!--.login-form-->
+                        </div>
+                        <!--.signup-tab-content-->
+                        <div id="login-tab-content" class="login-box">
+                            <form method="POST" id="contactForm" name="contactForm" class="contactForm row">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="text" class="input" id="user_name" autocomplete="off" required>
+                                        <label>نام کاربری</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="user-box">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" required>
+                                        <label>رمز عبور</label>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                 مرا به خاطر بسپار!
+                                </label>
+                                </div>
+                                <div class="d-grid gap-2 col-12 mx-auto">
+                                    <input type="submit" class="btn btn_red" value="ورود">
+                                </div>
+                                <p><a href="#">رمز خود را فراموش کردید؟</a></p>
+                            </form>
+                            <!--.login-form-->
+                        </div>
+                        <!--.login-tab-content-->
+                    </div>
+                    <!--.tabs-content-->
+                    <!-- <button type="button" class="btn btn_red" data-bs-dismiss="modal">Close</button> -->
+                </div>
+                <!--form-wrap-->
+            </div>
+        </div>
+    </div>
+    <!-- end modal for regester -->
+    <!-- end navbar -->
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img1.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">ثبت نام</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img2.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">بیشتر بدانید</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/img3.jpg" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn_red" href="#">گالری</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--end carousel -->
+    <div class="container">
+        <!-- advanced search -->
+        <div class="s009">
+            <form>
+                <div class="inner-form">
+                    <div class="basic-search">
+                        <div class="input-field">
+                            <input id="search" type="text" placeholder="جست و جو کنید" onfocus="this.placeholder='' " onblur="this.placeholder='جست و جو کنید' " />
+                            <div class="icon-wrap">
+                                <svg aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                            </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advance-search">
+                        <span class="desc">جست و جوی پیشرفته</span>
+                        <div class="row">
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">تجهیزات جانبی</option>
+                                    <option>زیرشاخه 1</option>
+                                    <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">رنگ</option>
+                                   <option>زیرشاخه 1</option>
+                                   <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">اندازه</option>
+                                  <option>زیرشاخه 1</option>
+                                  <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row second">
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">فروش</option>
+                                     <option>زیرشاخه 1</option>
+                                     <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">زمان</option>
+                                    <option>آخرین بار</option>
+                                    <option>امروز</option>
+                                    <option>این هفته</option>
+                                    <option>این ماه</option>
+                                    <option>این سال</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">نوع</option>
+                                      <option>زیرشاخه 1</option>
+                                      <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Third">
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">فروش</option>
+                                     <option>زیرشاخه 1</option>
+                                     <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">زمان</option>
+                                    <option>آخرین بار</option>
+                                    <option>امروز</option>
+                                    <option>این هفته</option>
+                                    <option>این ماه</option>
+                                    <option>این سال</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <div class="input-select">
+                                    <select data-trigger="" name="choices-single-defaul">
+                                    <option placeholder="" value="">نوع</option>
+                                      <option>زیرشاخه 1</option>
+                                      <option>زیرشاخه 2</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row Fourth">
+                            <div class="input-field">
+                                <div class="group-btn">
+                                    <button class=" btn btn_red">جست و جو</button>
+                                    <button class="btn-delete" id="delete">پاک کردن</button>
+                                </div>
+                                <div class="result-count">
+                                    نتیجه جست و جو <span>108 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end advanced search -->
+        <!-- main  -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 r_side">
+                            <div class="user_info">
+                                <a href="#"><img src="img/avatar.png" alt=""></a>
+                                <span class="full_name"><small> مجید ابراهیمی</small></span>
+                                <a href="#" class="user_mail"><small>majid88@</small></a>
+                                <a href="#" class="btn btn_def">خرید اشتراک</a>
+                            </div>
+                            <div class="d-flex">
+                                <div class="nav v_t_m flex-column me-3 d-grid gap-2 col-12 mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="btn btn_def active" data-bs-toggle="pill" data-bs-target="#Subscription_status" role="tab" aria-selected="true">
+                                     <img src="img/website.svg" alt="">&nbsp;
+                                        وضعیت اشتراک
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#last_comments" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        آخرین نظرات من
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Watch_list" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        لیست تماشا
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Notifications" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        اطلاع رسانی ها
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Fav_titles" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                      عناوین مورد علاقه
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Req_movies" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        درخواست فیلم و سریال
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Subtitle_req" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        درخواست زیرنویس
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#User_reviews" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                       نقد های کاربران
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Edit_account" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                        ویرایش حساب کاربری
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#Bug_report" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                      گزارش اشکال
+                                    </button>
+                                    <button class="btn btn_def" data-bs-toggle="pill" data-bs-target="#exit" role="tab" aria-selected="false">
+                                        <img src="img/website.svg" alt="">&nbsp;
+                                      خروج از حساب
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 l_side">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="Subscription_status" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-center align-item-center">
+                                            <div class="card green">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">بسته فعال:</h5>
+                                                    <p class="card-text text-center">الماس</p>
+                                                    <p class="card-text text-center">روز های باقیمانده:
+                                                        <a href="">101</a>
+                                                    </p>
+                                                    <a href="#" class="btn btn_def d-grid gap-2 col-12 mx-auto">تمدید بسته</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-success" role="alert">
+                                            <h5 class="text-center">با خرید اشتراک به هزاران فیلم روز دنیا با دوبله اختصاصی دسترسی داشته باشید</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">پلن زمرد</h5>
+                                                    <p class="card-text text-center">شش ماهه</p>
+                                                    <p class="card-text text-center">120 هزار تومان</p>
+                                                    <a href="#" class="btn btn_red d-grid gap-2 col-12 mx-auto">خرید بسته</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">پلن نقره ای</h5>
+                                                    <p class="card-text text-center">یک ساله</p>
+                                                    <p class="card-text text-center">200 هزار تومان</p>
+                                                    <a href="#" class="btn btn_red d-grid gap-2 col-12 mx-auto">خرید بسته</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">پلن طلایی</h5>
+                                                    <p class="card-text text-center">دو ساله</p>
+                                                    <p class="card-text text-center">380 هزار تومان</p>
+                                                    <a href="#" class="btn btn_red d-grid gap-2 col-12 mx-auto">خرید بسته</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-center">پلن الماس</h5>
+                                                    <p class="card-text text-center">سه ساله</p>
+                                                    <p class="card-text text-center">550 هزار تومان</p>
+                                                    <a href="#" class="btn btn_red d-grid gap-2 col-12 mx-auto">خرید بسته</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="last_comments" role="tabpanel">...200</div>
+                                <div class="tab-pane fade" id="Watch_list" role="tabpanel">...300</div>
+                                <div class="tab-pane fade" id="Notifications" role="tabpanel">...400</div>
+                                <div class="tab-pane fade" id="Fav_titles" role="tabpanel">...500</div>
+                                <div class="tab-pane fade" id="Req_movies" role="tabpanel">...600</div>
+                                <div class="tab-pane fade" id="Subtitle_req" role="tabpanel">...700</div>
+                                <div class="tab-pane fade" id="User_reviews" role="tabpanel">...800</div>
+                                <div class="tab-pane fade" id="Edit_account" role="tabpanel">...900</div>
+                                <div class="tab-pane fade" id="Bug_report" role="tabpanel">...1000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pr-md-5">
+                        <a href="#" class="footer-site-logo d-block mb-4">فیلم باز</a>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                            فرهنگ پیشرو در زبان فارسی طراحی شده
+
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <ul class="list-unstyled nav-links">
+                            <li><a href="#">خانه</a></li>
+                            <li><a href="#">درباره ما</a></li>
+                            <li><a href="#">تماس با ما</a></li>
+                            <li><a href="#">هنرمندان</a></li>
+                            <li><a href="#">تریلر ها</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <ul class="list-unstyled nav-links">
+                            <li><a href="#">پروفایل</a></li>
+                            <li><a href="#">تیم فیلم باز</a></li>
+                            <li><a href="#">سریال</a></li>
+                            <li><a href="#">فیلم</a></li>
+                            <li><a href="#">دسته بندی</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md text-md-center">
+                        <ul class="social list-unstyled">
+                            <li>
+                                <a href="#"><img src="images/instagram.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/twitter.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/pinterest.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/facebook.svg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/dribbble.svg" alt=""></a>
+                            </li>
+                        </ul>
+                        <p class="neshan"><img src="images/images.jpg" alt=""></p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <div class="copyright">
+                            <p><small>&copy; تمامی حقوق و مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنون می باشد.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- end footer -->
+    </div>
+
+    <script src="js/jqyry.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/choices.js"></script>
+
+    <script>
+        //script advansed search 
+        const customSelects = document.querySelectorAll("select");
+        const deleteBtn = document.getElementById('delete')
+        const choices = new Choices('select', {
+            searchEnabled: false,
+            itemSelectText: '',
+            removeItemButton: true,
+        });
+        deleteBtn.addEventListener("click", function(e) {
+            e.preventDefault()
+            const deleteAll = document.querySelectorAll('.choices__button')
+            for (let i = 0; i < deleteAll.length; i++) {
+                deleteAll[i].click();
+            }
+        });
+        // end script advansed search
+        // navbar-toggler 
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        // end navbar-toggler
+        // cheng navbar color when scroll
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+        // end cheng navbar color when scroll
+        // vertical nav panel
+        var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+        triggerTabList.forEach(function(triggerEl) {
+                var tabTrigger = new bootstrap.Tab(triggerEl)
+
+                triggerEl.addEventListener('click', function(event) {
+                    event.preventDefault()
+                    tabTrigger.show()
+                })
+            })
+            // end ertical nav panel
+    </script>
+
+
+</body>
+
+
+</html>

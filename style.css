@@ -120,6 +120,10 @@ nav ul {
     list-style: none;
 }
 
+nav {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
 blockquote,
 q {
     quotes: none;
@@ -233,7 +237,15 @@ sup {
 /* Home */
 
 
-/* btn_red */
+/* color */
+
+.green {
+    background: #05794c !important;
+    color: #fff !important;
+}
+
+
+/* btn_ */
 
 .btn_red {
     color: #fff !important;
@@ -251,6 +263,28 @@ sup {
     box-shadow: none !important;
 }
 
+.btn_def {
+    color: #141414 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.btn_def:hover {
+    color: #fff !important;
+    background: #c03 !important;
+    border-color: #c03 !important;
+}
+
+.btn_def:focus {
+    box-shadow: none !important;
+}
+
+.btn_def.active {
+    color: #fff !important;
+    background-color: #c03 !important;
+    border-color: #c03 !important;
+}
+
 .btn-group {
     display: flex !important;
     position: relative;
@@ -262,6 +296,10 @@ sup {
 
 
 /* navbar */
+
+.navbar-default.scrolled {
+    background: #fff;
+}
 
 .navbar-toggler {
     border: none !important;
@@ -304,8 +342,8 @@ sup {
 
 .search-container input[type=text] {
     padding: 10px;
-    margin-top: 9px;
-    font-size: 17px;
+    margin-top: 8px;
+    font-size: 16px;
     border: none;
 }
 
@@ -1166,7 +1204,7 @@ sup {
 
 .card {
     margin-bottom: 40px !important;
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15) !important;
 }
 
 .card-header {
@@ -1618,7 +1656,7 @@ a.dl_box:hover {
 }
 
 .reply small:hover {
-    color: green;
+    color: #c03;
     cursor: pointer
 }
 
@@ -1637,6 +1675,7 @@ a.dl_box:hover {
     border-bottom: 1px solid #c03;
     outline: none;
     background: transparent;
+    direction: rtl;
 }
 
 .login-box .user-box label {
@@ -1696,6 +1735,78 @@ textarea.form_control {
 
 
 /*  */
+
+.search {
+    position: absolute;
+    left: 15px;
+    top: 85px;
+    z-index: 10;
+    border: none;
+}
+
+.contact_gif img {
+    width: 100%;
+    height: 350px;
+}
+
+.contact_gif,
+.form_box {
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.contact_info {
+    display: flex;
+}
+
+.contact_info .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.item img {
+    height: 60px;
+    margin: 10px 0;
+}
+
+.contact_info .item:nth-child(1),
+.contact_info .item:nth-child(3) {
+    background: #c03;
+    color: #fff;
+}
+
+.contact_info .item:nth-child(2),
+.contact_info .item:nth-child(4) {
+    background: #fff;
+    color: #c03;
+}
+
+
+/* panel */
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.user_info img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.v_t_m button {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* endpanel */
 
 
 /*------------ media_screen ---------------*/
