@@ -11,6 +11,7 @@
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"> -->
     <link type="text/css" rel="stylesheet" href="css/hover-min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- navicons -->
     <link href="images/LogoTop.svg" rel="icon">
     <link href="images/LogoTop.svg" rel="apple-touch-icon">
@@ -329,7 +330,7 @@
                                 <a href="#"><img src="img/avatar.png" alt=""></a>
                                 <span class="full_name"><small> مجید ابراهیمی</small></span>
                                 <a href="#" class="user_mail"><small>majid88@</small></a>
-                                <a href="#" class="btn btn_def">خرید اشتراک</a>
+                                <a href="#" class="btn btn_red">خرید اشتراک</a>
                             </div>
                             <div class="d-flex">
                                 <div class="nav v_t_m flex-column me-3 d-grid gap-2 col-12 mx-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -448,76 +449,149 @@
                                 <div class="tab-pane fade" id="Req_movies" role="tabpanel">...600</div>
                                 <div class="tab-pane fade" id="Subtitle_req" role="tabpanel">...700</div>
                                 <div class="tab-pane fade" id="User_reviews" role="tabpanel">...800</div>
-                                <div class="tab-pane fade" id="Edit_account" role="tabpanel">...900</div>
-                                <div class="tab-pane fade" id="Bug_report" role="tabpanel">...1000</div>
+                                <div class="tab-pane fade" id="Edit_account" role="tabpanel">
+                                    <div class="container rounded bg-white mt-5 mb-5">
+                                        <div class="col-md-12">
+                                            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                                                <img class="rounded-circle mt-5" width="150px" src="img/avatar.png">
+                                                <label for="apply" class="choos_file">
+                                                    <input type="file" name="" id="apply" accept="image/*,.pdf">
+                                                    <img src="images/plus-square-solid.svg" width="40" alt="">
+                                                </label>
+
+                                                <span class="font-weight-bold">Edogaru</span>
+                                                <span class="text-black-50">edogaru@mail.com.my</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="p-3 py-5 login-box">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h4 class="text-right">تنظیمات پروفایل</h4>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="text" class="input" id="firstname" autocomplete="off" required>
+                                                        <label>نام</label>
+                                                    </div>
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="text" class="input" id="Surname" autocomplete="off" required>
+                                                        <label>نام خانوادگی</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="number" class="input" id="phonnumber" autocomplete="off" required>
+                                                        <label>موبایل</label>
+                                                    </div>
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="text" class="input" id="city" autocomplete="off" required>
+                                                        <label>شهرستان</label>
+                                                    </div>
+                                                    <div class="col-md-12 user-box">
+                                                        <input type="text" class="input" id="address" autocomplete="off" required>
+                                                        <label>ادامه آدرس </label>
+                                                    </div>
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="number" class="input" id="postid" autocomplete="off" required>
+                                                        <label>کد پستی </label>
+                                                    </div>
+                                                    <div class="col-md-6 user-box">
+                                                        <input type="email" class="input" id="email" autocomplete="off" required>
+                                                        <label>ایمیل</label>
+                                                    </div>
+                                                    <div class="col-md-12 user-box">
+                                                        <input type="text" class="input" id="moredetails" autocomplete="off" required>
+                                                        <label>توضیحات بیشتر</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-5 text-center"><button class="btn btn_red" type="button">ذخیره</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Bug_report" role="tabpanel">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body login-box">
+                                                <div class="user-box">
+                                                    <textarea name="message " class="form_control " id="message " cols="30 " rows="6 " required></textarea>
+                                                    <label>گزارش اشکال</label>
+                                                    <a href="" class="btn btn_red">ذخیره</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end main -->
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 pr-md-5">
-                        <a href="#" class="footer-site-logo d-block mb-4">فیلم باز</a>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-                            فرهنگ پیشرو در زبان فارسی طراحی شده
+    </div>
+    </div>
+    <!-- end main -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pr-md-5">
+                    <a href="#" class="footer-site-logo d-block mb-4">فیلم باز</a>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود فرهنگ
+                        پیشرو در زبان فارسی طراحی شده
 
-                        </p>
-                    </div>
-                    <div class="col-md">
-                        <ul class="list-unstyled nav-links">
-                            <li><a href="#">خانه</a></li>
-                            <li><a href="#">درباره ما</a></li>
-                            <li><a href="#">تماس با ما</a></li>
-                            <li><a href="#">هنرمندان</a></li>
-                            <li><a href="#">تریلر ها</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md">
-                        <ul class="list-unstyled nav-links">
-                            <li><a href="#">پروفایل</a></li>
-                            <li><a href="#">تیم فیلم باز</a></li>
-                            <li><a href="#">سریال</a></li>
-                            <li><a href="#">فیلم</a></li>
-                            <li><a href="#">دسته بندی</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md text-md-center">
-                        <ul class="social list-unstyled">
-                            <li>
-                                <a href="#"><img src="images/instagram.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/twitter.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/pinterest.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/facebook.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/dribbble.svg" alt=""></a>
-                            </li>
-                        </ul>
-                        <p class="neshan"><img src="images/images.jpg" alt=""></p>
-                    </div>
+                    </p>
                 </div>
-                <div class="row ">
-                    <div class="col-12 text-center">
-                        <div class="copyright">
-                            <p><small>&copy; تمامی حقوق و مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنون می باشد.</small></p>
-                        </div>
+                <div class="col-md">
+                    <ul class="list-unstyled nav-links">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">هنرمندان</a></li>
+                        <li><a href="#">تریلر ها</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <ul class="list-unstyled nav-links">
+                        <li><a href="#">پروفایل</a></li>
+                        <li><a href="#">تیم فیلم باز</a></li>
+                        <li><a href="#">سریال</a></li>
+                        <li><a href="#">فیلم</a></li>
+                        <li><a href="#">دسته بندی</a></li>
+                    </ul>
+                </div>
+                <div class="col-md text-md-center">
+                    <ul class="social list-unstyled">
+                        <li>
+                            <a href="#"><img src="images/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/twitter.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pinterest.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/dribbble.svg" alt=""></a>
+                        </li>
+                    </ul>
+                    <p class="neshan"><img src="images/images.jpg" alt=""></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <div class="copyright">
+                        <p><small>&copy; تمامی حقوق و مطالب و قالب برای فیلم باز محفوظ است و هرگونه کپی برداری بدون ذکر منبع ممنون می باشد.</small></p>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </footer>
-        <!-- end footer -->
+    </footer>
+    <!-- end footer -->
     </div>
 
     <script src="js/jqyry.min.js"></script>
