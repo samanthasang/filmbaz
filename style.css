@@ -223,11 +223,11 @@ ul {
 }
 
 .fr {
-    float: right;
+    float: right !important;
 }
 
 .fl {
-    float: left;
+    float: left !important;
 }
 
 sup {
@@ -298,8 +298,66 @@ sup {
 
 /* toggle btn */
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #c03;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #c03;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 
 /* end toggle btn */
+
+
+/* hover */
+
+
+/* end hover */
 
 
 /* nav */
@@ -336,6 +394,11 @@ sup {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.nav-item {
+    margin: 0 1px;
+    border-radius: 8px;
+}
+
 .nav-item a {
     color: #777 !important;
 }
@@ -343,17 +406,20 @@ sup {
 .nav-item .active {
     background: #c03;
     color: #fff !important;
+    border-radius: 8px;
 }
 
 .nav-item:active {
     background: #c03;
     color: #fff !important;
+    border-radius: 8px !important;
 }
 
 .nav-link:focus,
 .nav-link:hover {
     background: #c03 !important;
     color: #fff !important;
+    border-radius: 8px !important;
 }
 
 .search-container input[type=text] {
@@ -1246,9 +1312,28 @@ sup {
     width: 100%;
     margin: 10px 0;
     border-radius: 10px;
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
-.img_box .content {
+.img_box_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img_box_2 img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.img_box img:hover {
+    transform: scale(1);
+}
+
+.content {
     position: absolute;
     bottom: 10px;
     left: 12px;
@@ -1256,9 +1341,11 @@ sup {
     background: #c03;
     opacity: .6;
     padding: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.img_box .content:hover {
+.content:hover {
     opacity: 1;
 }
 
