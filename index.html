@@ -15,7 +15,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-default rounded fixed-top " aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top" aria-label="Eighth navbar example">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/brand.png" alt=""></a>
             <a href="#" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs">
                     <li class="nav-item tab">
-                        <a class="nav-link active" aria-current="page" href="index.html">صفحه اصلی</a>
+                        <a class="nav-link active" aria-current="page" href="index.html"></a>صفحه اصلی</a>
                     </li>
                     <li class="nav-item tab">
                         <a class="nav-link" href="#">فیلم</a>
@@ -36,8 +36,8 @@
                     <li class="nav-item tab">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">سریال</a>
                     </li>
-                    <li class="nav-item tab">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">هنرمندان</a>
+                    <li class="nav-item tab"></li>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">هنرمندان</a>
                     </li>
                     <li class="nav-item tab dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">دسته بندی</a>
@@ -59,10 +59,7 @@
                     </form>
                 </div>
                 <a href="#" class="btn btn_red" data-bs-toggle="modal" data-bs-target="#exampleModal">ورود | ثبت نام</a>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                  </label>
+                <input type="checkbox" name="">
             </div>
         </div>
     </nav>
@@ -200,6 +197,7 @@
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                   </svg>
                             </div>
+                            <button class="btn btn_red hid_btn">پیشرفته</button>
                         </div>
                     </div>
                     <div class="advance-search">
@@ -324,7 +322,7 @@
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/avengers-endgame-poster.jpg">
                                     <div class="box-content">
@@ -349,7 +347,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/Black Widow poster.jpg">
                                     <div class="box-content">
@@ -374,7 +372,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/Captain Marvel poster.jpg">
                                     <div class="box-content">
@@ -399,7 +397,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/Eternals_(film)_poster.jpeg">
                                     <div class="box-content">
@@ -424,7 +422,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/Shang-Chi and The Legend of The Ten Rings poster.jpeg">
                                     <div class="box-content">
@@ -449,7 +447,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-sm-6">
+                            <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="box">
                                     <img src="img/Spider-Man Far From Home poster.jpg">
                                     <div class="box-content">
@@ -482,12 +480,13 @@
         <!--end new_movies box  -->
         <!-- main  -->
         <div class="row mb-3">
-            <div class="col-md-8">
+            <div class="col-lg-8 col-md-8">
                 <div class="card">
                     <div class="card-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-                                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
-                            </svg> دانلود فیلم Spider-Man: Far from Home
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16"></svg>
+                        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"
+                        />
+                        </svg> دانلود فیلم Spider-Man: Far from Home
                         <ul class="hp_icon">
                             <li class="list-inline-item">
                                 <a href="#" class="hvr-shrink">
@@ -514,7 +513,7 @@
                         </ul>
                     </div>
                     <div class="row card-body">
-                        <div class="col-md-8">
+                        <div class="col-lg-8 col-md-8">
                             <ul>
                                 <li>
                                     <span>نام فیلم :</span>
@@ -559,7 +558,7 @@
                                 و در تاریخ ۶ ژوئن ۲۰۱۴ روی پرده .
                             </p>
                         </div>
-                        <div class="col-md-4 movie_pic">
+                        <div class="col-lg-4 col-md-4 movie_pic">
                             <img src="img/Spider-Man Far From Home poster.jpg" alt="">
                         </div>
                     </div>
@@ -1072,7 +1071,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-4">
                 <div class="card">
                     <div class="card-header">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
@@ -1091,7 +1090,7 @@
                         <div class="tab-content" id="pills-tabContent-2">
                             <div class="tab-pane gener_list fade show active" id="film01" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1170,7 +1169,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1248,7 +1247,7 @@
                             </div>
                             <div class="tab-pane gener_list fade" id="serial01" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1327,7 +1326,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1425,7 +1424,7 @@
                         <div class="tab-content" id="pills-tabContent-3">
                             <div class="tab-pane gener_list fade show active" id="film02" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1504,7 +1503,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1582,7 +1581,7 @@
                             </div>
                             <div class="tab-pane gener_list fade" id="serial02" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1661,7 +1660,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6 col-md-6 col-sm-6 m_gener">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 m_gener">
                                         <ul>
                                             <li>
                                                 <a href="#">
@@ -1763,66 +1762,66 @@
                         <div class="tab-content" id="v-pills-tabContent-3">
                             <div class="tab-pane fade show active" id="tr_new" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tr_view" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tr_randon" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
                                 </div>
@@ -1852,66 +1851,66 @@
                         <div class="tab-content" id="v-pills-tabContent-3">
                             <div class="tab-pane fade show active" id="dob_new" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="dob_view" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="dob_randon" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/sanju.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/croods.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/iceage.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/panda.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/raya.jpg"></a>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                                    <div class="col-6 img_box">
                                         <a href="#"><img src="img/Inside_Out.jpg"></a>
                                     </div>
                                 </div>
@@ -1927,22 +1926,22 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/croods.jpg"></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/iceage.jpg"></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/Inside_Out.jpg"></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/panda.jpg"></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/raya.jpg"></a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 img_box">
+                            <div class="col-6 img_box">
                                 <a href="#"><img src="img/sanju.jpg"></a>
                             </div>
                         </div>
@@ -2174,11 +2173,6 @@
             });
         });
         // end regester modal tabs
-        // cheng navbar color when scroll
-        $(window).scroll(function() {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-        });
-        // end cheng navbar color when scroll
         //  nav panel
         var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
         triggerTabList.forEach(function(triggerEl) {
@@ -2194,4 +2188,4 @@
 </body>
 
 
-</html>
+</html
